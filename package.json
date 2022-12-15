@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/hadelnasr/nodejs-oauth/issues"
   },
-  "homepage": "https://github.com/hadelnasr/nodejs-oauth#readme"
+  "homepage": "https://github.com/hadelnasr/nodejs-oauth#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0"
+  }
 }
