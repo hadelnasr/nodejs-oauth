@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-oauth",
+  "version": "1.0.0",
+  "description": "implementing auth with google",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hadelnasr/nodejs-oauth.git"
+  },
+  "author": "haytham.adel376@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hadelnasr/nodejs-oauth/issues"
+  },
+  "homepage": "https://github.com/hadelnasr/nodejs-oauth#readme"
+}
