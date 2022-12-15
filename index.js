@@ -17,6 +17,7 @@ const AUTH_OPTIONS = {
     clientSecret: config.CLIENT_SECRET
 };
 
+// 3.Get the access token and profile data upon success
 function verifyCallback(accessToken, refreshToken, profile, done) {
     console.log('Google Profile', profile);
     done(null, profile);
@@ -38,11 +39,12 @@ function checkLoggedIn(req, res, next) {
     next();
 }
 
+// 1.Use google to login
 app.get('/auth/google', passport.authenticate('google', {
     scope: ['email'],
 }));
 
-// authenticating ...
+// 2.Callback from google with the authorization code
 app.get('/auth/google/callback', passport.authenticate('google', {
     failureRedirect: '/failure',
     successRedirect: '/',
